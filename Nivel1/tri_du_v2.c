@@ -14,17 +14,14 @@ int main()
 
     scanf("%d %d", &a, &b); // leitura dos valores das cartas
 
-    while(a != 0 && b != 0){ // Enquanto não for 0 0
-        if(a > b){           // Se A > B
-            printf("%d\n", a);
 
-        }
-        else{                // Se A < B || A == B
-            printf("%d\n", b);
+    if(a > b){ // Se A > B
+        printf("%d\n", a);
 
-        }
+    }
+    else{ // Se A < B || A == B
+        printf("%d\n", b);
 
-        scanf("%d %d", &a, &b); // Lê novos valores
     }
 
     return 0;
