@@ -36,17 +36,18 @@ Y
 int main (){
 
     int i, j, n, d, l, r, c, flag_posicionamento_valido = 1;
+    int guarda_d, guarda_l, guarda_r, guarda_c;
     int tabuleiro[10][10];
 
     // numero n de navios
     scanf("%d", &n);
 
     // preenche o tabuleiro com zeros
-    for(i = 0; i < 10; i++){
+/*     for(i = 0; i < 10; i++){
         for(j = 0; j < 10; j++){
             tabuleiro[i][j] = 0;
         }
-    }
+    } */ // completamente inutil se usar NULL, exceto para representar o tabuleiro de forma gráfica
 
     // leitura dos navios
     // verifica se o navio esta alinhado horizontalmente e se esta contido no tabuleiro e se nao esta ocupado por mais de um navio
@@ -57,10 +58,8 @@ int main (){
         scanf("%d %d %d %d", &d, &l, &r, &c);
         c -= 1;
         r -= 1;
-        int aux = c + l;
-        int aux1 = r + l;
 
-        if(d == 0 && aux <= 10){
+        if(d == 0 && c <= 10 - l){
             for(j = c; j <= c + l - 1; j++){
                 if(tabuleiro[r][j] == 0){
                     tabuleiro[r][j] = 1;
@@ -68,48 +67,48 @@ int main (){
                 }
                 else{
                     flag_posicionamento_valido = 0;
-                    //break;
 
                 }
             }
         }
-
-        else if(d == 1 && aux1 <= 10){
+        else{
             for(j = r; j <= r + l - 1; j++){
                 if(tabuleiro[j][c] == 0){
                     tabuleiro[j][c] = 1;
 
                 }
-                
                 else{
                     flag_posicionamento_valido = 0;
-                    //break;
                     
                 }
             }
         }
-        else{
-            flag_posicionamento_valido = 0;
-            //break;
-
-        }
     }
     
-/*     // imprime o tabuleiro
+    // verifica se todos os navios estao contidos no tabuleiro
+    for(i = 0; i < 10; i++){
+        for(j = 0; j < 10; j++){
+            if(tabuleiro[i][j] == 0){
+                flag_posicionamento_valido = 1;
+            }
+        }
+    }
+
+    // imprime o tabuleiro
     for(i = 0; i < 10; i++){
         for(j = 0; j < 10; j++){
             printf("%d ", tabuleiro[i][j]);
         }
         printf("\n");
-    } */
+    }
 
 
     // imprime o resultado
     if(flag_posicionamento_valido == 1){
-        printf("Y\n");
+        printf("Y");
     }
     else{
-        printf("N\n");
+        printf("N");
     }
 
 
