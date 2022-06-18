@@ -10,7 +10,7 @@ Dada a lista de acessos diários que ocorreram à página de Alice e Bia,
 escreva um programa para determinar quantos dias foram necessários para a soma dos acessos chegar a 1 milhão e as amigas ganharem o prêmio.
 
 Entrada
-A primeira linha da entrada contém um número inteiro NN, que indica o número de dias que a lista contém. 
+A primeira linha da entrada contém um número inteiro N, que indica o número de dias que a lista contém. 
 Cada uma das linhas seguintes contém um único inteiro AA, o número de acessos em um dia. 
 O primeiro número dado indica o número de acessos no primeiro dia, o segundo número dado indica o número de acessos no segundo dia, e assim por diante.
 
@@ -25,7 +25,7 @@ int main (){
     int a; // quantidade de acessos
     int soma; // soma dos acessos
     int i; // contador
-    int vetor[100]; // vetor de acessos
+    int vetor[1000]; // vetor de acessos
 
     scanf("%d", &n);
 
