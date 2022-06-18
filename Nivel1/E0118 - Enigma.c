@@ -55,9 +55,6 @@ void main ()
 }
 
 unsigned short enigma(char *cifra, char *crib)
-
-cifra, char crib
-
 {
 
 	bool igualdades = false;
