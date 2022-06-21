@@ -30,26 +30,20 @@ int main (){
 
     scanf("%d", &n);
 
-    // criar um vetor de char
-    char s[n*2];
+    // criar um vetor de char com o tamanho da string
+    //char s[n*2];
 
+    // criar um vetor de char com o tamanho da string com os ' ' entre os '0' e '1' ...
+    char *s = (char*)malloc(n*2*sizeof(char));
+
+
+    // preencher o vetor de char
     for(int i = 0; i < n*2; i++){
         scanf("%c", &s[i]);
     }
 
-    //gets(s);
-
-
-
-/*  // nao consigo concatenar os ' ' entre os '0' e '1' ...
-    for(i = 0; i < n; i++){
-        if(s[i] == '1' && s[i+1] == '0' && s[i+2] == '0'){
-            total++;
-            i += 2;
-        }
-    }
- */
-
+    
+    // ler o vetor e encontrar o padrão "100"
     for(i = 0; i < n*2; i++){
         if(s[i] == '1' && s[i+2] == '0' && s[i+4] == '0'){
             total++;
