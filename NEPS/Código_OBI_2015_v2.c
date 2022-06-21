@@ -42,7 +42,7 @@ int main (){
     // pegar o tamanho da string
     int len = strlen(s);
 
-    printf("\nString :%s\n", s);
+    //printf("\nString :%s\n", s);
     
     
     // ler o vetor e concatenar os ' ' entre os '0' e '1' ...
