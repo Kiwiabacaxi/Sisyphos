@@ -1,0 +1,1 @@
+{"name":"Local: debug","url":"e:\\Maratona\\NEPS\\debug.c","tests":[{"id":1655772158526,"input":"17\n1 1 1 0 1 0 0 1 0 1 0 0 1 1 1 1 0","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Maratona\\NEPS\\debug.c","group":"local","local":true}
