@@ -10,6 +10,7 @@
 
 /* 
 https://neps.academy/br/exercise/47
+
 Gabriel inventou um código para representar números naturais, usando uma sequência de zeros e uns. 
 Funciona assim, o número natural é representado pela quantidade de vezes que o padrão "100" aparece na sequência.
 
