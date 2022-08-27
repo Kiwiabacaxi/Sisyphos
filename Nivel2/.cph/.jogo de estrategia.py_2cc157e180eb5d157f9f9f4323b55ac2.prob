@@ -1,0 +1,1 @@
+{"name":"Local: jogo de estrategia","url":"e:\\0_Github_files\\1_Maratona_spoj\\Nivel2\\jogo de estrategia.py","tests":[{"id":1661558629224,"input":"3 3\n1 1 1 1 2 2 2 3 3","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\0_Github_files\\1_Maratona_spoj\\Nivel2\\jogo de estrategia.py","group":"local","local":true}
